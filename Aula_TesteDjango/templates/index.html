@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,21 +7,21 @@
         {% block title %}
 
         {% endblock %}
+
     </title>
-    {% block head %}
+
+    {% block head%}
 
     {% endblock %}
 </head>
 <body>
     {% include 'nav.html' %}
-    
-    {% block body %}
 
+    {% block body%}
+            <h1>Hotel Senai!</h1>
     {% endblock %}
-    
-    
-    {% include 'footer.html' %}
 
+    {% include 'footer.html' %}
 
 </body>
 </html>

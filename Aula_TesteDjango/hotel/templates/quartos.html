@@ -9,13 +9,16 @@ Homepage
 
 
 {% block body%}
-{% for hotel in dados_hotel %}
+{% for quarto in dados_quartos %}
 <div class="hotel-info">
-    <h2>{{ hotel.titulo }}</h2>
-    <p>{{ hotel.descricao }}</p>
+    <h2>{{ quarto.titulo }}</h2>
+    <p>{{ quarto.descricao }}</p>
+    <img src="{{ quarto.foto_quarto.url }}" alt="Logo do quarto">
+    <p>Disponibilidade: {{ quarto.disponibilidade }}</p>
+</div>
 {% endfor %}
 {% endblock %}
 
 {% block footer%}
-<p>Hotel Senai - 2024</p>
+<p>quarto Senai - 2024</p>
 {% endblock %}
